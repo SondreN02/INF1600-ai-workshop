@@ -51,7 +51,7 @@ def main():
     interface = gr.Interface(
         fn=lambda x: classify_image(x, labels, nb_classes), inputs=image, outputs=label, title='Vision Transformer Image Classifier', examples=examples,
     )
-    interface.launch(debug=True, share=False, height=600, width=1200)  # by setting share=True you can serve the website for others to access
+    interface.launch(debug=True, share=True, height=600, width=1200)  # by setting share=True you can serve the website for others to access
 
 
 if __name__ == "__main__":
